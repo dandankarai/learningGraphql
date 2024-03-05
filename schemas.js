@@ -22,7 +22,10 @@ type Author {
 
 type Query {
   reviews: [Review],
+  review(id:ID!): Review       #------> Search for a unique id, passing props ID.
   games:[Game],
+  game(id:ID!): Game           #------> Search for a unique id, passing props ID.
   authors:[Author]
+  author(id:ID!): author       #------> Search for a unique id, passing props ID.
 }
 `;
